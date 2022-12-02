@@ -1,11 +1,11 @@
-for(let i= 2 ; i<num ; i++){
+let num=13
 
-if(num%2==0){
+if(num%num==0 && num%1==0){
 
-console.log("Not prime");
+console.log("Prime Number");
 }
-
+else
 }
-console.log("Prime")
+console.log("Not a Prime")
 
 }
