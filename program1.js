@@ -1,11 +1,22 @@
-let num=13
 
-if(num%num==0 && num%1==0){
+function checkprime(number){
 
-console.log("Prime Number");
+	let factors = 0 ;
+	for(let i = 0 ; i<number ; i++){
+		if(number%i==0){
+			factors++ ;
+		}
+	}
+	if(factors==2){
+		return true ;
+	}else{
+		return false ;
+	}
 }
-else
-}
-console.log("Not a Prime")
 
+let answer = checkprime(13) ;
+if(answer==true){
+	console.log("Prime") ;
+}else{
+	console.log("Not a Prime Number");
 }
